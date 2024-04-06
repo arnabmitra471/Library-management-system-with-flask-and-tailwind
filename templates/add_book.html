@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block body %}
+<h1 class="bg-purple-200 p-4 m-4 text-center text-xl font-bold text-purple-500">Add a book</h1>
+
+<div class="flex justify-center items-start">
+    <form class="flex flex-col justify-center items-center" action="/addbook" method="post">
+        <!-- Book title -->
+        <label for="title" >Enter book title:</label>
+        <input type="text" id="title" name="title" class="block w-full  m-4 p-4 focus:placeholder-white placeholder-green-500 focus:bg-green-500 rounded-md transition-colors duration-200 ease-in-out text-green-500 focus:text-white capitalize" placeholder="Enter book title" required>
+
+        <!-- Book author -->
+        <label for="title">Enter book author:</label>
+        <input type="text" id="title" name="title" class="block w-full  m-4 p-4 focus:placeholder-white placeholder-green-500 focus:bg-green-500 rounded-md transition-colors duration-200 ease-in-out text-green-500 focus:text-white capitalize" placeholder="Enter book author" required>
+        
+        <!-- Book quantity -->
+        <label for="quantity">Select book quantity:</label>
+        <select name="quantity" id="quantity" class="p-4 m-4 w-fit bg-purple-500 text-white font-bold">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <label for="issue-date">Select book quantity:</label>
+        <input type="date" id="issue-date" name="title" class="block w-full  m-4 p-4 focus:placeholder-white placeholder-green-500 focus:bg-green-500 rounded-md transition-colors duration-200 ease-in-out text-green-500 focus:text-white" required>
+        <button type="submit" class="bg-indigo-500 p-4 rounded-lg hover:bg-indigo-600 transition-colors duration-200 ease-in-out">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

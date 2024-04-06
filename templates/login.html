@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{%block title %} LMS - Login {% endblock %}
+{%block body %}
+    <div class="container p-4  min-h-[80vh] w-full flex justify-center items-center bg-gradient-to-r from-sky-700 to-yellow-600"">
+        <form class="flex flex-col gap-3 items-center">
+            <label for="email" class="inline-flex justify-start items-start">Enter your email</label>
+            <input type="email" name="userEmail" id="email" placeholder="Enter your email" class=" w-full p-3 border-2 border-red-800 text-purple-400 focus:bg-green-400 focus:text-white focus:placeholder-white placeholder-green-400 rounded-md transition-colors ease-in-out duration-200 text-lg" autocomplete="username">
+
+            <label for="password" class="inline-flex justify-start items-start">Enter your password</label>
+            <input type="password" name="userPassword" id="password" placeholder="Enter your password" class="w-full p-3 border-2 text-purple-400 border-red-800 focus:bg-green-400 focus:text-white focus:placeholder-white placeholder-green-400 rounded-md transition-colors ease-in-out duration-200 text-lg" autocomplete="current-password">
+
+            <button type="submit" class="bg-purple-400 p-4 m-4 border-4 border-blue-400 rounded-md hover:cursor-pointer hover:bg-green-500 transition-colors ease-in-out duration-200 hover:scale-90 text-white font-bold underline">Login</button>
+        </form>
+    </div>
+{%endblock %}

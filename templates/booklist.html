@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block body %}
+<button type="button" class="bg-indigo-500 p-4 rounded-lg hover:bg-indigo-600 transition-colors duration-200 ease-in-out m-5" onclick="location.href='{{ url_for('add_book_form') }}';">Add book</button>
+<div class="container flex justify-center items-center flex-row">
+  
+<table class="table-auto border-2  border-collapse">
+    <thead>
+      <tr class="border-gray-400 border-2 p-4">
+        <th class="p-4">Sr No</th>
+        <th class="p-4">Book Name</th>
+        <th class="p-4">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-gray-400 border-2 p-4">
+        <td class="border-gray-400 border-2 p-4">1</td>
+        <td class="border-gray-400 border-2 p-4">Java 2nd edition</td>
+        <td class="border-gray-400 border-2 p-4">
+          <button type="button" class="bg-indigo-500 p-4 rounded-lg hover:bg-indigo-600 transition-colors duration-200 ease-in-out">Edit</button>
+          <button type="button" class="bg-red-500 p-4 rounded-lg hover:bg-red-600 transition-colors duration-200 ease-in-out">Delete</button>
+        </td>
+      </tr>
+      <tr class="border-gray-400 border-2 p-4">
+        <td class="border-gray-400 border-2 p-4">2</td>
+        <td class="border-gray-400 border-2 p-4">Core python</td>
+        <td class="border-gray-400 border-2 p-4">
+          <button type="button" class="bg-indigo-500 p-4 rounded-lg hover:bg-indigo-600 transition-colors duration-200 ease-in-out">Edit</button>
+          <button type="button" class="bg-red-500 p-4 rounded-lg hover:bg-red-600 transition-colors duration-200 ease-in-out">Delete</button>
+        </td>
+      </tr>
+      <tr class="border-gray-400 border-2 p-4">
+        <td class="border-gray-400 border-2 p-4">3</td>
+        <td class="border-gray-400 border-2 p-4">Machine Learning</td>
+        <td class="border-gray-400 border-2 p-4">
+          <button type="button" class="bg-indigo-500 p-4 rounded-lg hover:bg-indigo-600 transition-colors duration-200 ease-in-out ">Edit</button>
+          <button type="button" class="bg-red-500 p-4 rounded-lg hover:bg-red-600 transition-colors duration-200 ease-in-out">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{%endblock %}

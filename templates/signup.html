@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{%block title %} LMS - Signup {% endblock %}
+{% block body %}
+    <div class="container flex justify-center items-center min-h-[80vh] p-5 bg-gradient-to-r from-sky-700 to-yellow-600">
+        <form class="flex flex-col gap-5" action="/signup" method="post">
+            <label for="name" class="inline-flex justify-center items-center text-white">Enter your name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" class="p-4 border-2 border-indigo-500 rounded-lg text-lg focus:bg-green-500 text-green-500 focus:text-white focus:placeholder-white placeholder-green-500 transition-colors duration-200 ease-in-out" autocomplete="on">
+
+            <label for="phoneNum" class="inline-flex justify-center items-center text-white">Enter your phone number</label>
+            <input type="text" name="phoneNum" id="phoneNume" placeholder="Enter your phone number" class="p-4 border-2 border-indigo-500 rounded-lg text-lg focus:bg-green-500 text-green-500 focus:text-white focus:placeholder-white placeholder-green-500 transition-colors duration-200 ease-in-out" autocomplete="tel">
+            
+            <label for="email" class="inline-flex justify-center items-center text-white">Enter your Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" class="p-4 border-2 border-indigo-500 rounded-lg text-lg focus:bg-green-500 text-green-500 focus:text-white focus:placeholder-white placeholder-green-500 transition-colors duration-200 ease-in-out" autocomplete="email">
+
+            <label for="password" class="inline-flex justify-center items-center text-white">Enter your password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" class="p-4 border-2 border-indigo-500 rounded-lg text-lg focus:bg-green-500 text-green-500 focus:text-white focus:placeholder-white placeholder-green-500" autocomplete="new-password">
+
+            <label for="cpassword" class="inline-flex justify-center items-center text-white">Confirm your password</label>
+            <input type="password" name="cPassword" id="cpassword" placeholder="Confirm your password" class="w-full p-3 border-2 text-purple-400 border-red-800 focus:bg-green-400 focus:text-white focus:placeholder-white placeholder-green-400 rounded-md transition-colors ease-in-out duration-200 text-lg" autocomplete="on">
+            <button type="submit" class="bg-purple-400 p-4 m-4 border-4 border-blue-400 rounded-md hover:cursor-pointer hover:bg-green-500 transition-colors ease-in-out duration-200 hover:scale-90 text-white font-bold underline">Signup</button>
+        </form>
+    </div>
+
+{% endblock %}
